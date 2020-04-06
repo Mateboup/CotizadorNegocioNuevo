@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Yo como asesor" skipped="0" tests="1" time="4069.46" timestamp="2020-04-05 02:07:33"><testcase name="Generación de valor de cotización y número de transacción"><failure message="&#10;Expected: an element that is currently enabled&#10;     but: no matching element found by xpath: //span[@class='mat-select-placeholder ng-tns-c30-6 ng-star-inserted'][contains(text(),'Tipo de Documento')] was not enabled" type="java.lang.AssertionError">
+Expected: an element that is currently enabled
+     but: no matching element found by xpath: //span[@class='mat-select-placeholder ng-tns-c30-6 ng-star-inserted'][contains(text(),'Tipo de Documento')] was not enabled</failure><system-err>
+Expected: an element that is currently enabled
+     but: no matching element found by xpath: //span[@class='mat-select-placeholder ng-tns-c30-6 ng-star-inserted'][contains(text(),'Tipo de Documento')] was not enabled&#13;
+com.sura.cotizador.tasks.IniciarNuevaCotizacion.performAs(IniciarNuevaCotizacion.java:58)&#13;
+com.sura.cotizador.stepdefinitions.CotizadorStepDefinitions.cotice_una_pliza_de_autos_individual_para_un_tomador_identificado_con_(CotizadorStepDefinitions.java:33)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.serenity-bdd:serenity-screenplay:1.9.20">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.serenity-bdd/serenity-screenplay/1.9.20/e4234c8f9a908f95600931bc584d4ad9ecf7e873/serenity-screenplay-1.9.20.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.serenity-bdd/serenity-screenplay/1.9.20/4a95f2142a9a19f3fcb88064b06d71656fd99ee5/serenity-screenplay-1.9.20-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
