@@ -61,7 +61,10 @@ public class IniciarNuevaCotizacion implements Task {
             Click.on(BTN_TIPO_DOCUMENTO),
             Click.on(LST_TIPO_DOCUMENTO.of(tipoIdentificacion)),
             Enter.theValue(numeroIdentificacion).into(TXT_NUMERO_DOCUMENTO),
-            Click.on(BTN_ACEPTAR_DATOS_TOMADOR));
+            Click.on(BTN_ACEPTAR_DATOS_TOMADOR),
+            WaitUntil.the(BTN_CONTINUARA,isVisible()).forNoMoreThan(10).seconds(),
+            Click.on(BTN_CONTINUARA));
+
   }
 
   public static IniciarNuevaCotizacion polizaAutos(String tipoIdentificacion, String numeroIdentificacion) {
