@@ -87,21 +87,21 @@
 <span class="code">
 <pre>
 ?[31mFailed scenarios:?[0m
-?[31msrc/test/resources/features/cotizador.feature:16 ?[0m# Generación de valor de cotización y número de transacción
+?[31msrc/test/resources/features/cotizador.feature:17 ?[0m# Generación de valor de cotización y número de transacción
 
 1 Scenarios (?[31m1 failed?[0m)
-5 Steps (?[31m1 failed?[0m, ?[36m3 skipped?[0m, ?[32m1 passed?[0m)
-0m30,886s
+6 Steps (?[31m1 failed?[0m, ?[36m3 skipped?[0m, ?[32m2 passed?[0m)
+1m23,704s
 
-net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: unknown error: Element &lt;div class=&quot;mat-button-ripple mat-ripple&quot; matripple=&quot;&quot;&gt;&lt;/div&gt; is not clickable at point (674, 578). Other element would receive the click: &lt;div class=&quot;block-ui-wrapper block-ui-main active&quot;&gt;...&lt;/div&gt;
+net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: unknown error: cannot focus element
   (Session info: chrome=75.0.3770.100)
   (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'PSEG9PZYRQ2', ip: '10.99.23.229', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: 'PSEG9PZYRQ2', ip: '10.99.1.220', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: D:\Usuarios\mateboup\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: dc80d9d7fdd73ef98bb6f3a080204fbe
+Session ID: f484566f77632aa3bc95b4c3a460ffb7
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -114,11 +114,12 @@ Session ID: dc80d9d7fdd73ef98bb6f3a080204fbe
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1041)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$$EnhancerByCGLIB$$e3f2ec6d.CGLIB$performAs$0(&lt;generated&gt;)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$$EnhancerByCGLIB$$e3f2ec6d$$FastClassByCGLIB$$eb009f51.invoke(&lt;generated&gt;)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.clear(WebElementFacadeImpl.java:1069)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:684)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1.CGLIB$performAs$0(&lt;generated&gt;)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1$$FastClassByCGLIB$$da8429ac.invoke(&lt;generated&gt;)
 	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
 	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:449)
 	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:434)
@@ -126,23 +127,23 @@ Session ID: dc80d9d7fdd73ef98bb6f3a080204fbe
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:150)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:137)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at net.serenitybdd.screenplay.actions.ClickOnTarget$$EnhancerByCGLIB$$e3f2ec6d.performAs(&lt;generated&gt;)
+	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$$EnhancerByCGLIB$$4e987eb1.performAs(&lt;generated&gt;)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:106)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:90)
-	at com.sura.cotizador.tasks.IniciarNuevaCotizacion.performAs(IniciarNuevaCotizacion.java:58)
-	at com.sura.cotizador.tasks.IniciarNuevaCotizacion$$EnhancerByCGLIB$$5a671ca2.CGLIB$performAs$0(&lt;generated&gt;)
-	at com.sura.cotizador.tasks.IniciarNuevaCotizacion$$EnhancerByCGLIB$$5a671ca2$$FastClassByCGLIB$$75c1829c.invoke(&lt;generated&gt;)
+	at com.sura.cotizador.tasks.IngresarDatosPoliza.performAs(IngresarDatosPoliza.java:30)
+	at com.sura.cotizador.tasks.IngresarDatosPoliza$$EnhancerByCGLIB$$747c1514.CGLIB$performAs$0(&lt;generated&gt;)
+	at com.sura.cotizador.tasks.IngresarDatosPoliza$$EnhancerByCGLIB$$747c1514$$FastClassByCGLIB$$c2927726.invoke(&lt;generated&gt;)
 	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
 	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
 	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
 	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:361)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:132)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at com.sura.cotizador.tasks.IniciarNuevaCotizacion$$EnhancerByCGLIB$$5a671ca2.performAs(&lt;generated&gt;)
+	at com.sura.cotizador.tasks.IngresarDatosPoliza$$EnhancerByCGLIB$$747c1514.performAs(&lt;generated&gt;)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:106)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:90)
-	at com.sura.cotizador.stepdefinitions.CotizadorStepDefinitions.cotice_una_pliza_de_autos_individual_para_un_tomador_identificado_con_(CotizadorStepDefinitions.java:33)
-	at ✽.cotice una póliza de autos individual para un tomador identificado con CEDULA 10258666(src/test/resources/features/cotizador.feature:9)
+	at com.sura.cotizador.stepdefinitions.CotizadorStepDefinitions.realice_la_cotizacion_de_la_poliza_con_un_asesor(CotizadorStepDefinitions.java:40)
+	at ✽.realice la cotizacion de la póliza con un asesor 10808 y medio de venta Asesor(src/test/resources/features/cotizador.feature:10)
 
 </pre>
 </span>
@@ -178,7 +179,7 @@ Session ID: dc80d9d7fdd73ef98bb6f3a080204fbe
 
 TEST STARTED: Generación de valor de cotización y número de transacción
 -------------------------------------------------------------------(yo-como-asesor;generación-de-valor-de-cotización-y-número-de-transacción)
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Generación de valor de cotización y número de transacción #1: {tipoAsesor=independiente, tipoDocumento=CEDULA, numeroDocumento=10258666, tipoPlan=Global, cantidadDias=0, vencerse/expedirse=expedirse, tipoVehiculo=Automovil, estadoVehiculo=cero kilometros}
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Generación de valor de cotización y número de transacción #1: {codigoAsesor=10808, tipoDocumento=CEDULA, numeroDocumento=10258666, tipoPlan=Global, fechaInicio=07/04/2020, medioVenta=Asesor, placa=MAT001, modelo=2020, ciudad=Medellin, ceroKm=Si}
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91m
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
@@ -190,7 +191,7 @@ TEST STARTED: Generación de valor de cotización y número de transacción
 TEST FAILED WITH ERROR: Generación de valor de cotización y número de transacción
 ---------------------------------------------------------------------?[0m
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91mTEST FAILED AT STEP Perform as: Asesor?[0m
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - The following error occurred: unknown error: Element &lt;div class=&quot;mat-button-ripple mat-ripple&quot; matripple=&quot;&quot;&gt;&lt;/div&gt; is not clickable at point (674, 578). Other element would receive the click: &lt;div class=&quot;block-ui-wrapper block-ui-main active&quot;&gt;...&lt;/div&gt;  (Session info: chrome=75.0.3770.100)  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'System info: host: 'PSEG9PZYRQ2', ip: '10.99.23.229', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'Driver info: org.openqa.selenium.remote.RemoteWebDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: D:\Usuarios\mateboup\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}Session ID: dc80d9d7fdd73ef98bb6f3a080204fbe
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - The following error occurred: unknown error: cannot focus element  (Session info: chrome=75.0.3770.100)  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'System info: host: 'PSEG9PZYRQ2', ip: '10.99.1.220', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'Driver info: org.openqa.selenium.remote.RemoteWebDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: D:\Usuarios\mateboup\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}Session ID: f484566f77632aa3bc95b4c3a460ffb7
 </pre>
 </span>
 </div>
@@ -202,7 +203,7 @@ TEST FAILED WITH ERROR: Generación de valor de cotización y número de transac
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at 6/04/2020 11:33:13 AM</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 10/04/2020 12:18:01 PM</p>
 </div>
 </div>
 </body>

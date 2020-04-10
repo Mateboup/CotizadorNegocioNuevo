@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cotizador.iml" filepath="$PROJECT_DIR$/.idea/modules/Cotizador.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cotizador.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Cotizador.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cotizador.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Cotizador.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sura.com.co.Cotizador.iml" filepath="$PROJECT_DIR$/.idea/modules/sura.com.co.Cotizador.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sura.com.co.Cotizador.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sura.com.co.Cotizador.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sura.com.co.Cotizador.test.iml" filepath="$PROJECT_DIR$/.idea/modules/sura.com.co.Cotizador.test.iml" />
     </modules>
   </component>
 </project>

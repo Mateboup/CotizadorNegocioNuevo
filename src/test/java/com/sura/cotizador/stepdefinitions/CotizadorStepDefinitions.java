@@ -1,6 +1,7 @@
 package com.sura.cotizador.stepdefinitions;
 
 import com.sura.cotizador.tasks.DatosBasicos;
+import com.sura.cotizador.tasks.IngresarDatosPoliza;
 import com.sura.cotizador.tasks.IniciarNuevaCotizacion;
 import com.sura.cotizador.tasks.IniciarSesion;
 import com.sura.cotizador.usersinterfaces.enums.Credenciales;
@@ -31,17 +32,24 @@ public class CotizadorStepDefinitions {
     @When("^cotice una póliza de autos individual para un tomador identificado con (.*) (.*)$")
     public void cotice_una_pliza_de_autos_individual_para_un_tomador_identificado_con_(String tipoDocumento, String numeroDocumento) {
         theActorInTheSpotlight().attemptsTo(
-                IniciarNuevaCotizacion.polizaAutos(tipoDocumento,numeroDocumento),
-                DatosBasicos.cliente());
+                IniciarNuevaCotizacion.polizaAutos(tipoDocumento,numeroDocumento));
     }
-    @And("^realice la cotizacion de la póliza con un asesor (.*)$")
-    public void realice_la_cotizacion_de_la_poliza_con_un_asesor(String tipoAsesor){
+    @And("^realice la cotizacion de la póliza con un asesor (.*) y medio de venta (.*)$")
+    public void realice_la_cotizacion_de_la_poliza_con_un_asesor(String codigoAsesor, String medioVenta){
+
+        theActorInTheSpotlight().attemptsTo(IngresarDatosPoliza.datosPoliza(codigoAsesor,medioVenta));
 
     }
 
-    @And("^seleccione un plan (.*) con (.*) días para (.*) y un vehículo de tipo (.*) (.*)$")
-    public void seleccione_un_Global_con_días_expedirse_y_un_vehículo_de_tipo_Automovil_nuevo(String tipoPlan, String cantidadDias, String vencerseExpedirse, String tipoVehiculo, String estadoVehiculo)  {
+    @And("^seleccione un plan (.*) con fecha de inicio (.*) de vigencia$")
+    public void seleccione_un_Global_con_días_expedirse_y_un_vehículo_de_tipo_Automovil_nuevo(String tipoPlan, String inicioVigencia)  {
     }
+
+    @And("^ingrese la placa (.*), modelo (.*),ciudad de circulacion (.*) y vehiculo cero km (.*)$")
+    public void ingrese_placa_modelo_ciudad_y_vechiculo_si_es_0_km(String placa, String modelo,String ciudad, String ceroKm)  {
+
+    }
+
 
     @Then("^se genera un valor de prima y un numero de cotizacion$")
     public void se_genera_un_valor_de_prima_y_un_numero_de_cotizacion(){
