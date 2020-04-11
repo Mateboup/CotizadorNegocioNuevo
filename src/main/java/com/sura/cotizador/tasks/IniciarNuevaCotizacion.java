@@ -15,10 +15,7 @@ import com.sura.cotizador.usersinterfaces.enums.ProductosCotizador;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
-import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.EnterValue;
-import net.serenitybdd.screenplay.actions.SelectFromOptions;
+import net.serenitybdd.screenplay.actions.*;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 
@@ -62,8 +59,11 @@ public class IniciarNuevaCotizacion implements Task {
             Click.on(LST_TIPO_DOCUMENTO.of(tipoIdentificacion)),
             Enter.theValue(numeroIdentificacion).into(TXT_NUMERO_DOCUMENTO),
             Click.on(BTN_ACEPTAR_DATOS_TOMADOR),
-            WaitUntil.the(BTN_CONTINUARA,isVisible()).forNoMoreThan(10).seconds(),
-            Click.on(BTN_CONTINUARA));
+            WaitUntil.the(SPN_COTIZADOR, isNotVisible()).forNoMoreThan(10).seconds(),
+            Scroll.to(BTN_CONTINUAR),
+            Click.on(BTN_CONTINUAR));
+
+
 
   }
 

@@ -12,5 +12,6 @@ public class CotizadorPage {
   public static final Target LST_TIPO_DOCUMENTO = Target.the("Seleccionar tipo de documento").locatedBy("//div[@class='ng-trigger ng-trigger-transformPanel ng-tns-c17-3 mat-select-panel mat-primary ng-star-inserted']//span[contains(text(),'{0}')]");
   public static final Target TXT_NUMERO_DOCUMENTO = Target.the("Escribir numero de documento").located(By.xpath("//input[@id='mat-input-1']"));
   public static final Target BTN_ACEPTAR_DATOS_TOMADOR = Target.the("Aceptar datos tomador").located(By.xpath("//span[@class='mat-button-wrapper'][contains(.,'Aceptar')]"));
-  public static final Target BTN_CONTINUARA= Target.the("Continuar").located(By.xpath("//*[@id=\"contenedorInicial\"]/div/div/app-contenedor-cliente/div/button/div[1]"));
+  public static final Target BTN_CONTINUAR = Target.the("Continuar Juanes").located(By.xpath("//div[@class=\"container-fluid container-cliente\"]/button"));
+
 }

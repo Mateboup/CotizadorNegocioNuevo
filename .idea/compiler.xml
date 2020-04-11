@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="Cotizador.main" target="1.8" />
       <module name="Cotizador.test" target="1.8" />
+      <module name="sura.com.co.Cotizador.main" target="1.8" />
+      <module name="sura.com.co.Cotizador.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
