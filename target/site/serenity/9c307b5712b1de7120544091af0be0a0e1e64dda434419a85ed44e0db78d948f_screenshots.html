@@ -111,7 +111,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-04-2020 12:16</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 15-04-2020 17:09</span>
     <br style="clear:left"/>
 </div>
 
@@ -147,9 +147,9 @@ Para verificar que se genere un valor de prima y un número de cotización para 
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
                             <span class="test-case-title">
-                                <span class="error-color">Generaci&oacute;n de valor de cotizaci&oacute;n y n&uacute;mero de transacci&oacute;n
+                                <span class="failing-color">Generaci&oacute;n de valor de cotizaci&oacute;n y n&uacute;mero de transacci&oacute;n
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -172,8 +172,8 @@ Para verificar que se genere un valor de prima y un número de cotización para 
     <div id="contenttilttle">
             <div class="screenshotFailure panel panel-danger">
 
-                        <div class="panel-heading title="Web driver exception: The following error occurred: unknown error: cannot focus element  (Session info: chrome=75.0.3770.100)  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'System info: host: 'PSEG9PZYRQ2', ip: '10.99.1.220', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'Driver info: org.openqa.selenium.remote.RemoteWebDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: D:\Usuarios\mateboup\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}Session ID: f484566f77632aa3bc95b4c3a460ffb7">
-                            Web driver exception: The following error occurred: unknown error: cannot focus element  (Session info: chrome=75.0.3770.100)  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x...
+                        <div class="panel-heading title="Element should be enabled exception: Expected enabled element was not enabled">
+                            Element should be enabled exception: Expected enabled element was not enabled
                         </div>
                 <div><!-- Stack trace -->
                     <button type="button" class="btn btn-danger" data-toggle="modal"
@@ -191,20 +191,37 @@ Para verificar que se genere un valor de prima y un número de cotización para 
                                         aria-label="Close"><span aria-hidden="true">&times;</span>
                                 </button>
                                 <h4 class="modal-title" id="stacktraceModalLabel">
-                                    org.openqa.selenium.WebDriverException
+                                    net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException
                                 </h4>
                             </div>
                             <div class="modal-body">
                                     <h5>
-                                        <pre>The following error occurred: unknown error: cannot focus element<br>  (Session info: chrome=75.0.3770.100)<br>  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)<br>Command duration or timeout: 0 milliseconds<br>Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'<br>System info: host: 'PSEG9PZYRQ2', ip: '10.99.1.220', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'<br>Driver info: org.openqa.selenium.remote.RemoteWebDriver<br>Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: D:\Usuarios\mateboup\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}<br>Session ID: f484566f77632aa3bc95b4c3a460ffb7</pre>
+                                        <pre>Expected enabled element was not enabled</pre>
                                     </h5>
-                                    com.sura.cotizador.tasks.IngresarDatosPoliza.performAs(IngresarDatosPoliza.java
-                                    :30) <br>
-                                    com.sura.cotizador.stepdefinitions.CotizadorStepDefinitions.realice_la_cotizacion_de_la_poliza_con_un_asesor(CotizadorStepDefinitions.java
-                                    :40) <br>
+                                    com.sura.cotizador.tasks.SeleccionarPlan.performAs(SeleccionarPlan.java
+                                    :25) <br>
+                                    com.sura.cotizador.stepdefinitions.CotizadorStepDefinitions.seleccione_un_Global_con_días_expedirse_y_un_vehículo_de_tipo_Automovil_nuevo(CotizadorStepDefinitions.java
+                                    :41) <br>
                                     cucumber.runner.Runner.runPickle(Runner.java
                                     :80) <br>
                             </div>
+
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close"><span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title" id="stacktraceModalLabel">
+                                        Caused by: org.openqa.selenium.TimeoutException
+                                    </h4>
+                                </div>
+                                <div class="modal-body">
+                                        <pre>Expected condition failed: waiting for By.xpath: //div[@class='card-content']//div[@class='horizontal layout wrap responsive-layout']//div[contains(text(),'{0}')] to be enabled (tried for 40 second(s) with 100 milliseconds interval)</pre>
+                                    <pre>
+                                        com.sura.cotizador.tasks.SeleccionarPlan.performAs(SeleccionarPlan.java :25) <br>
+                                        com.sura.cotizador.stepdefinitions.CotizadorStepDefinitions.seleccione_un_Global_con_días_expedirse_y_un_vehículo_de_tipo_Automovil_nuevo(CotizadorStepDefinitions.java :41) <br>
+                                        cucumber.runner.Runner.runPickle(Runner.java :80) <br>
+                                    </pre>
+                                </div>
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -217,16 +234,17 @@ Para verificar que se genere un valor de prima y un número de cotización para 
 
 
                 <div class="panel-body">
-                    <a href="pagesource3037650675672109298.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource452059689695328228.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="502e7c921505bb5b2fecdcafa99564c8deb5bf686d4c13aed564a217e716dd55.png" title="Dado que un asesor se encuentra en cotizador" width="1366"/>
-                <img src="3199a6ab245ddfbcacc36ab941807de47f704f7c2f6002b6009bf6dd1e6d9e35.png" title="Cuando cotice una p&oacute;liza de autos individual para un tomador identificado con CEDULA 10258666" width="1366"/>
+                <img src="64e88b223de6a9cbff4c3ead372ac0bdf720adb7e086f2d2afc6077ff87c7e91.png" title="Cuando cotice una p&oacute;liza de autos individual para un tomador identificado con CEDULA 10258666" width="1366"/>
                 <img src="5bfc3e970a65e3f4b1e24e1b164d594bc4ae187ea76ade3981ba9f79dae9fa4a.png" title="Then Spiner Cotizador should be an element that is not visible" width="1366"/>
-                <img src="cb21a987330781424e249b1929320843fbbd6e3c35643bf589ec268ae8c02678.png" title="Then Ingresar Codigo de Asesor should be an element that is visible" width="1366"/>
-                <img src="cb21a987330781424e249b1929320843fbbd6e3c35643bf589ec268ae8c02678.png" title="Asesor enters '10808' into Ingresar Codigo de Asesor: <span class='error-color'>ERROR</span>" width="1366"/>
+                <img src="1b463766622f62492e82eb64b794bc6adb7e7649022c83d893763a0cdb193af3.png" title="Y realice la cotizacion de la p&oacute;liza con un asesor 10808 y medio de venta Asesor" width="1366"/>
+                <img src="e436a2b13ff3b6bff349d5d3adc934a85cce82d89f5a4fe784a979c08c3013b1.png" title="Then Ingresar Codigo de Asesor should be an element that is visible" width="1366"/>
+                <img src="1331ff19880bc8fc7a57a40e1ef90657259aad8e4bcf322210d1e91816195d52.png" title="Asesor clicks on Seleccionar plan : <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 
