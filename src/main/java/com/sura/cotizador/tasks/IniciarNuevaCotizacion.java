@@ -17,6 +17,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.*;
 import net.serenitybdd.screenplay.waits.WaitUntil;
+import org.openqa.selenium.By;
 
 
 public class IniciarNuevaCotizacion implements Task {
@@ -51,17 +52,21 @@ public class IniciarNuevaCotizacion implements Task {
     } catch (InterruptedException e) {
       e.printStackTrace();
     }
+
     System.out.println(LST_TIPO_DOCUMENTO.of(tipoIdentificacion).getCssOrXPathSelector());
     actor.attemptsTo(
             WaitUntil.the(SPN_COTIZADOR, isNotVisible()),
             WaitUntil.the(BTN_TIPO_DOCUMENTO, isCurrentlyEnabled()),
             Click.on(BTN_TIPO_DOCUMENTO),
+
             Click.on(LST_TIPO_DOCUMENTO.of(tipoIdentificacion)),
             Enter.theValue(numeroIdentificacion).into(TXT_NUMERO_DOCUMENTO),
             Click.on(BTN_ACEPTAR_DATOS_TOMADOR),
             WaitUntil.the(SPN_COTIZADOR, isNotVisible()).forNoMoreThan(10).seconds(),
             Scroll.to(BTN_CONTINUAR),
-            Click.on(BTN_CONTINUAR));
+            Click.on(BTN_CONTINUAR)
+
+    );
 
 
 

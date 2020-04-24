@@ -13,5 +13,5 @@ Característica:Yo como asesor
     Entonces se genera un valor de prima y un numero de cotizacion
 
     Ejemplos:
-      |codigoAsesor   |tipoDocumento |numeroDocumento|tipoPlan |fechaInicio| medioVenta |placa |modelo|ciudad  |ceroKm|
-      |10808          |CEDULA        |10258666       |Global   |07/04/2020 | Asesor     |MAT001|2020  |Medellin|Si    |
+      |codigoAsesor   |tipoDocumento |numeroDocumento|tipoPlan |fechaInicio| medioVenta |placa |modelo|        ciudad        |ceroKm|
+      |10808          |CEDULA        |10258666       |Global   |07/04/2020 | Asesor     |MAT001|2020  |Medellin - ( Antioquia)|SI   |

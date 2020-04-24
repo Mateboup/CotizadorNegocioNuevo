@@ -1,16 +1,11 @@
 package com.sura.cotizador.stepdefinitions;
 
-import com.sura.cotizador.tasks.DatosBasicos;
-import com.sura.cotizador.tasks.IngresarDatosPoliza;
-import com.sura.cotizador.tasks.IniciarNuevaCotizacion;
-import com.sura.cotizador.tasks.IniciarSesion;
-import com.sura.cotizador.usersinterfaces.enums.Credenciales;
+import com.sura.cotizador.tasks.*;
 import com.sura.cotizador.usersinterfaces.enums.Urls;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import cucumber.api.java.it.Dati;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 
@@ -37,17 +32,18 @@ public class CotizadorStepDefinitions {
     @And("^realice la cotizacion de la póliza con un asesor (.*) y medio de venta (.*)$")
     public void realice_la_cotizacion_de_la_poliza_con_un_asesor(String codigoAsesor, String medioVenta){
 
-        theActorInTheSpotlight().attemptsTo(IngresarDatosPoliza.datosPoliza(codigoAsesor,medioVenta));
+        theActorInTheSpotlight().attemptsTo(IngresarDatosAsesor.datosPoliza(codigoAsesor,medioVenta));
 
     }
 
     @And("^seleccione un plan (.*) con fecha de inicio (.*) de vigencia$")
     public void seleccione_un_Global_con_días_expedirse_y_un_vehículo_de_tipo_Automovil_nuevo(String tipoPlan, String inicioVigencia)  {
+        theActorInTheSpotlight().attemptsTo(SeleccionarPlan.datosPlan(tipoPlan,inicioVigencia));
     }
 
     @And("^ingrese la placa (.*), modelo (.*),ciudad de circulacion (.*) y vehiculo cero km (.*)$")
     public void ingrese_placa_modelo_ciudad_y_vechiculo_si_es_0_km(String placa, String modelo,String ciudad, String ceroKm)  {
-
+        theActorInTheSpotlight().attemptsTo(IngresarInformacionCarro.datosCarro(placa,modelo,ciudad,ceroKm));
     }
 
 
