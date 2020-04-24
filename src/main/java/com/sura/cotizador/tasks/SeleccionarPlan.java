@@ -8,6 +8,10 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
+import static com.sura.cotizador.usersinterfaces.CotizadorPage.LST_TIPO_DOCUMENTO;
+import static com.sura.cotizador.usersinterfaces.DatosBasicosPage.IMG_PLAN;
+import static com.sura.cotizador.usersinterfaces.DatosBasicosPage.TXT_INICIO_VIGENCIA;
+
 public class SeleccionarPlan implements Task {
 
     private DatosBasicosPage datosBasicosPage;
@@ -19,14 +23,13 @@ public class SeleccionarPlan implements Task {
         this.inicioVigencia=inicioVigencia;
     }
 
-
     @Override
     public <T extends Actor> void performAs(T actor) {
-    actor.attemptsTo(
-            Click.on(datosBasicosPage.IMG_PLAN),
-            Enter.theValue(inicioVigencia).into(datosBasicosPage.TXT_INICIO_VIGENCIA)
+        System.out.println(IMG_PLAN);
+    actor.attemptsTo(Click.on(IMG_PLAN));
+    actor.attemptsTo(Click.on(TXT_INICIO_VIGENCIA));
+    actor.attemptsTo(Enter.theValue(inicioVigencia).into(TXT_INICIO_VIGENCIA));
 
-    );
 
     }
     public static SeleccionarPlan datosPlan(String tipoPlan, String inicioVigencia) {
